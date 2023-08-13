@@ -1,0 +1,982 @@
+<html>
+<head>
+<title>ONLINE GROCERY SHOP</title>
+<style>
+body
+{
+margin:0;
+font-family:system-ui;
+}
+.parallax, .parallax1{
+background-image: url(background123.jpg);
+height:max-content;
+background-attachment:fixed;
+background-position:center;
+background-size:cover;
+}
+.page-title{
+background:rgba(0,0,0.5);
+text-align:center;
+color:white;
+padding:50px;
+font-variant:small-caps;
+font-size:100px;
+font-family:fantasty;
+letter-spacing:20px;
+}
+.sticky{
+position:fixed;
+top:0;
+width:100%;
+}
+.menu{
+background:#184d47;
+text-align:center;
+}
+.menu-ul{
+margin:0;
+padding:0;
+display:inline;
+}
+.menu-ul li{
+font-size:17px;
+list-style:none;
+display:inline-block;
+padding:25px 25px 26px 25px;
+}
+.a-menu, .a-links{
+text-decoration:none;
+color:white;
+}
+.menu-ul li:hover{
+background:#5b8c5a;
+transform:scale(l.l);
+}
+.search-box{
+border:1px solid white;
+border-radius:50px;
+background:white;
+width:max-content;
+display:inline-block;
+margin:8px;
+}
+.search-box:hover{
+}
+.categories, .items{
+width:max-content;
+margin:25px;
+border:1px solid #184d47;
+border-radius: 0 0 50px 50px;
+display:inline-block;
+}
+.categories:hover, .items:hover{
+box-shadow:0 0 10px 3px #184d47;
+}
+.item-image{
+height:200px;
+width:200px;
+border-radius:0 0 50px 50px;
+padding:10px;
+}
+.image-title{
+text-align:center;
+padding:10px;
+font-weight:bold;
+}
+a,{
+text-decoration:none;
+}
+.title{
+padidng:50px;
+font-size:50px;
+font-weight:bold;
+letter-spacing:10px;
+color:white;
+background :rgba(0,0,0,0.5);
+}
+.deal{
+padding:50px;
+font-size:20px;
+font-weight:bold;
+color:white;
+display:inline-block;
+margin:20px;
+max-width:20%;
+background:linear-gradient(120deg,#16817a 20%,#cee397 50%,#16817a
+80%);
+}
+.coupon-btn{
+border:1px solid white;
+color:white;
+margin:10px;
+padding:10px;
+border-radius:20px;
+}
+.coupon-btn:hover{
+box-shadow:0 0 10px 5px white inset;
+}
+.images{
+display:inline-block;
+border:"1";
+}
+.item-image-size{
+height:175px;
+width:275px;
+padding:4.7px;
+}
+.sub{
+padding:5px;
+font-size:30px;
+font-weight:bold;
+letter-spacing:5px;
+color:white;
+background:linear-gradient(120deg,#16817a 20%,#cee397 50%,#16817a
+80%);
+}
+.description{
+margin:20px;
+min-height:100px;
+}
+.item-select{
+margin:10px 0 0 0;
+}
+.buynow-btn{
+border:1px solid #green;
+background:green;
+padding:5px 15px;
+border-radius:20px;
+font-weight:bold;
+margin-top:10px;
+colour:white;
+}
+.buynow-btn:hover{
+border:1px solid #green;
+box-shadow:0 0 10px 5px #greeen inset;
+}
+</style>
+</head>
+<body>
+<div class="parallax">
+<div class="page-title"> <img src="https://static.vecteezy.com/system/resources/previews/022/835/664/original/modern-logo-vegetable-in-shopping-cart-for-grocery-delivery-logo-design-vector.jpg" align="left" height="20%"
+width="10%">GROCERY SHOP</div>
+</div>
+<div class ="menu" id="sticky">
+<ul class="menu-ul">
+<a href="#deals" class="a-menu"><li> DEALS </li></a>
+<a href="#vegetables" class="a-menu"><li> VEGETABLES </li></a>
+<a href="#fruits" class="a-menu"><li> FRUITS </li></a>
+<a href="#meat" class="a-menu"><li> MEAT AND SEA FOODS </li></a>
+<a href="#daily needs" class="a-menu"><li> DAILY NEEDS </li></a>
+</ul>
+<div class="search-box">
+<form><input type="text" placeholder="search...." name="search" class="search-
+input"/>
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+<div class="container">
+<a href="#vegetables">
+<div class="categories">
+<img
+src="https://tse2.mm.bing.net/th?id=OIP.NAyiMjG3LarvUOkhA6OrlQHaFi&pid=
+Api&P=0" class="item-image"/>
+<div class="image-title">vegetables</div>
+</div>
+</a>
+<a href="#fruits">
+<div class="categories">
+<img src="https://tse4.mm.bing.net/th?id=OIP.R3ngyAHViStvdm-
+nZvr8QQHaFj&pid=Api&P=0" class="item-image"/>
+<div class="image-title">fruits</div>
+</div>
+</a>
+<a href="#meat">
+<div class="categories">
+<img src="https://media.istockphoto.com/id/1156027693/photo/fresh-salmon-steak-with-a-variety-of-seafood-and-herbs.jpg?s=612x612&w=0&k=20&c=FnY31V37yG5Ip4ejRttubUHBS8PPTaZfHHukDsEDjc0="
+class="item-image"/>
+<div class="image-title">meat& sea food </div>
+</div>
+</a>
+<a href="#Daily needs">
+<div class="categories">
+<img
+src="https://tse2.mm.bing.net/th?id=OIP.hmgpp4Mjgki5fHFP9EyGlQHaGu&pid=
+Api&P=0" class="item-image"/>
+<div class="image-title">Daily needs</div>
+</div>
+</a>
+<a href="#deals">
+<div class="categories">
+<img
+src="https://tse4.mm.bing.net/th?id=OIP.IA2ug6L8AS9wnQy8N0xo0AHaGW&pi
+d=Api&P=0" class="item-image"/>
+<div class="image-title">deals</div>
+</div>
+</a>
+</div>
+<div class="deals-container" id="deals">
+<div class="parallax">
+<div class="title"> DEALS</div>
+</div>
+<div class="deal">
+save 30% on the min-purshase of Rs.500 on vegetables<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deal">
+save 50% on the min-purshase of Rs.700 on fruits<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deal">
+save 40% for buying 1 kg of carrot <br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deal">
+save 20% for all types of fast food<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deal">
+save 70% buying 5 kg of apples<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deal">
+save 10% on the min-purshase of Rs.250 on meat&safefood<br/>
+<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deals-container" id="vegetables">
+<div class="parallax">
+<div class="title">VEGETABLES</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://www.aahantiexim.com/assets/img/vegtable/Capcicum.jpg" height=180 width=280 />
+</div>
+<div class="description">
+<b> CAPCICUM </b><br/>
+<div class="item-select">
+price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://tse2.mm.bing.net/th?id=OIP.87KPkdg4s-
+wZPW6_jje_IQHaE8&pid=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC POTATOES</b><br/>
+<div class="item-select">
+price: Rs.40/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img
+src="https://tse2.mm.bing.net/th?id=OIP.HJ1GybYAMddPVos5Ho2t9QHaFj&pid
+=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC CARROT</b><br/>
+<div class="item-select">
+price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img
+src="https://tse3.mm.bing.net/th?id=OIP.4vzaYrxOeqxy9PtIbnnfkAHaC8&pid=A
+pi&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC ONION</b><br/>
+<div class="item-select">
+price: Rs.70/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img
+src="https://tse2.mm.bing.net/th?id=OIP.EKP6KVJ9fiJChXdx8kV3UQHaFL&pid
+=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC CAULIFLOWER</b><br/>
+<div class="item-select">
+price: Rs.80/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>50 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+</div>
+<div class="deals-container" id="fruits">
+<div class="parallax">
+<div class="title">FRUITS</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img src="http://images.wisegeek.com/apples-whole-and-sliced.jpg" height=190 width=280 class="item-
+image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC APPLES</b><br/>
+<div class="item-select">
+price: Rs.70/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img
+src="https://tse3.mm.bing.net/th?id=OIP.hOr6_I_hlrEyTS_vK4_ccgHaEK&pid=A
+pi&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC ORANGES</b><br/>
+<div class="item-select">
+price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img
+src="https://tse1.explicit.bing.net/th?id=OIP.rKA9o1OB8ncZ54pEFXBLOgHaE7
+&pid=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC BANANA</b><br/>
+<div class="item-select">
+price: Rs.40/1 DOZEN
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 dozen</option>
+<option>2 dozen</option>
+<option>3 dozen</option>
+<option>4 dozen</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img
+src="https://tse2.mm.bing.net/th?id=OIP.S1IBCkWyLM3EPsZCWm0hfwHaFS&p
+id=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC GRAPES</b><br/>
+<div class="item-select">
+price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img
+src="https://tse1.mm.bing.net/th?id=OIP.OFe4-
+WvV98AxjUhBUhnesAHaEo&pid=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC GRAPES</b><br/>
+<div class="item-select">
+price: Rs.60/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+</div>
+<div class="deals-container" id="meat">
+<div class="parallax">
+<div class="title">MEATS & SEA FOODS</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img src="https://www.bigbasket.com/media/uploads/p/l/10000942_10-fresho-
+mutton-shoulder-boneless.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> MUTTON</b><br/>
+<div class="item-select">
+price: Rs.402/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img src="https://res.cloudinary.com/irwin-mitchell-
+llp/image/fetch/f_auto,q_auto:best/https://www.irwinmitchell.com/medialibrary/Ir
+winMitchellcom%20-%20NEW/news%20and%20insights%20images%20-
+%20NEW/2015/29%204%2015%20Millions%20Unaware%20Of%20Danger%20
+From%20Raw%20Chicken.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>chicken</b><br/>
+<div class="item-select">
+price: Rs.149/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://mir-s3-cdn-
+cf.behance.net/project_modules/max_1200/476c1684913405.5d6c4de0b5918.jpg"
+class="item-image-size"/>
+</div>
+<div class="description">
+<b> fish </b><br/>
+<div class="item-select">
+price: Rs.342/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items">
+<div class="images">
+<img src="https://www.mydeliciousblog.com/wp-content/uploads/2017/01/Gulf-
+Shrimp-Raw.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> Prawn </b><br/>
+<div class="item-select">
+price: Rs.233/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://thumbs.dreamstime.com/b/raw-velvet-crabs-some-crushed-ice-
+ready-be-cooked-48223538.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> Crab </b><br/>
+<div class="item-select">
+price: Rs.376/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/><button class="buynow-btn"> <a href="BUY.HTML"
+color="black">BUY</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://www.biomerieux-
+industry.com/sites/default/files/styles/image_large_1440_x_660_/public/2019-
+05/SSG-FAH-meat-rawBeef_0.jpg?itok=P1HF-NfB" class="item-image-size"/>
+</div>
+<div class="description">
+<b> Beef </b><br/>
+<div class="item-select">
+price: Rs.329/250grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>250 grams</option>
+<option>500 grams</option>
+<option>750 grams</option>
+<option>1000 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+</div>
+<div class="deals-container" id="daily needs">
+<div class="parallax">
+<div class="title">DAILY NEEDS</div>
+</div>
+<div class="sub"> DAIRY PRODUCTS </div>
+<div class ="items ">
+<div class="images">
+<img
+src="https://tse3.mm.bing.net/th?id=OIP.jkOucnvMrgJDGSgrvYe4zwHaHa&pid=
+Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> MILK POWDER </b><br/>
+<div class="item-select">
+price: Rs.120/1kg
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 kg</option>
+<option>2 kg</option>
+<option>3 kg</option>
+<option>4 kg</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://cdn.shopify.com/s/files/1/0434/5475/9072/products/GO-
+001_clipped_rev_1_copy_a891e3b2-9c00-4aa3-bd98-
+c1e8292042cd.jpg?v=1595672590" class="item-image-size"/>
+</div>
+<div class="description">
+<b> ORGANIC GHEE</b><br/>
+<div class="item-select">
+price: Rs.124/100 ml
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 ml</option>
+<option>200 ml</option>
+<option>300 ml</option>
+<option>400 ml</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://tse3.mm.bing.net/th?id=OIP.eRLnIM9S2U2iG9wwX4zCywHaE6&pi
+d=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> BUTTER</b><br/>
+<div class="item-select">
+price: Rs.299/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://nationaldairy.in/wp-content/uploads/2016/08/low-fat-
+paneer.png" class="item-image-size"/>
+</div>
+<div class="description">
+<b> PANEER</b><br/>
+<div class="item-select">
+price: Rs.299/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://www.bigbasket.com/media/uploads/p/l/40119321_4-nutoras-cheddar-cheese-block.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> CHEESE</b><br/>
+<div class="item-select">
+price: Rs.299/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class="sub"> GRAMS ANS SPICES </div>
+<div class ="items ">
+<div class="images">
+<img src="https://images-na.ssl-images-amazon.com/images/I/61y4PMY-
+SuL._AC_SL1500_.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> BASIC 10 SPICES </b>
+(Jumbo pack) <br/>
+<div class="item-select">
+price: Rs.999/per pack
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 packet</option>
+<option>2 packets</option>
+<option>3 packets</option>
+<option>4 packets</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img
+src="https://tse4.mm.bing.net/th?id=OIP.0MKfrjSmbydrwNQRjm0RigHaKC&pid
+=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> GREEN GRAM </b><br/>
+<div class="item-select">
+price: Rs.75/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img
+src="https://www.granarymart.com/cdn/shop/products/indian-split-yellow-pigeon-peas-protein-and-fiber-rich-203097.jpg?v=1640588478" height=180 width=250/>
+</div>
+<div class="description">
+<b> YELLOW PIGEON PEAS </b><br/>
+<div class="item-select">
+price: Rs.99/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://i5.walmartimages.com/asr/42d031e0-c9ea-4e76-9f3e-
+573f38af4a19.540f94b8a6ca48ac63a8414d75ba5a4f.jpeg?odnWidth=1000&odnH
+eight=1000&odnBg=ffffff" class="item-image-size"/>
+</div>
+<div class="description">
+<b> BLACK GRAM BEANS </b><br/>
+<div class="item-select">
+price: Rs.80/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img src="https://i5.walmartimages.com/asr/2c956adc-ed77-49e7-ae8c-
+4df76f636b14_1.7c4aafbbe2cb4786b8758b8fa1d63c00.jpeg?odnWidth=1000&od
+nHeight=1000&odnBg=ffffff" class="item-image-size"/>
+</div>
+<div class="description">
+<b> KIDNEY BEANS </b><br/>
+<div class="item-select">
+price: Rs.200/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class= "items ">
+<div class="images">
+<img
+src="https://www.farmstop.in/admin/uploads/product_variation_images/15128285
+65030Bengal_Gram.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> BENGAL GRAM </b><br/>
+<div class="item-select">
+price: Rs.150/100grams
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>100 grams</option>
+<option>200 grams</option>
+<option>300 grams</option>
+<option>400 grams</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class="sub"> OILS AND SAUCES </div>
+<div class ="items ">
+<div class="images">
+<img src="https://www.thelittlebigstore.com.au/wp-
+content/uploads/2020/04/IMG_20201110_192050-768x1024.jpg" height=180 width=250 class="item-
+image-size"/>
+</div>
+<div class="description">
+<b> TOMATO SAUCE </b><br/>
+<div class="item-select">
+price: Rs.120/1 BOTTLE
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 bottle</option>
+<option>2 bottles</option>
+<option>3 bottles</option>
+<option>4 bottles</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img src="https://i5.walmartimages.com/asr/a620ed25-84fe-4994-8153-
+b698cc0c7631_1.7e7f12a5f287c3cb9bb1c3fe6c267e7c.jpeg?odnWidth=1000&odn
+Height=1000&odnBg=ffffff" class="item-image-size"/>
+</div>
+<div class="description">
+<b> HOT PEPPER SAUCE </b><br/>
+<div class="item-select">
+price: Rs.150/1 BOTTLE
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 bottle</option>
+<option>2 bottles</option>
+<option>3 bottles</option>
+<option>4 bottles</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img
+src="https://tse3.mm.bing.net/th?id=OIP.BN_aDvnoDV97VO0RqY2ajgHaHa&pi
+d=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> MUSTARD SAUCE </b><br/>
+<div class="item-select">
+price: Rs.180/1 BOTTLE
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 bottle</option>
+<option>2 bottles</option>
+<option>3 bottles</option>
+<option>4 bottles</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img src="https://m.media-amazon.com/images/S/aplus-media/vc/b298875b-86c9-
+4d27-a2b8-15bfcc7d5122.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> RED-WINE VINIGER </b><br/>
+<div class="item-select">
+price: Rs.160/1 BOTTLE
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 bottle</option>
+<option>2 bottles</option>
+<option>3 bottles</option>
+<option>4 bottles</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img
+src="https://tse4.mm.bing.net/th?id=OIP.OoQAOQVeD_VMPj6ztps8wgHaHd&pi
+d=Api&P=0" class="item-image-size"/>
+</div>
+<div class="description">
+<b> REFINED OIL </b><br/>
+<div class="item-select">
+price: Rs.200/1 BOTTLE
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 bottle</option>
+<option>2 bottles</option>
+<option>3 bottles</option>
+<option>4 bottles</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+<div class ="items ">
+<div class="images">
+<img src="https://worldbranddesign.com/wp-content/uploads/2020/01/Oliva-
+Olive-Oil-world-brand-design-2.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b> OLIVE OIL </b><br/>
+<div class="item-select">
+price: Rs.120/1 BOTTLE
+</div>
+<label>Qty:</label>
+<select class="item-select">
+<option>1 bottle</option>
+<option>2 bottles</option>
+<option>3 bottles</option>
+<option>4 bottles</option>
+</select><br/>
+<button class="buynow-btn"> <a href="BUY.HTML" color="black">add to
+cart</a></button>
+</div>
+</div>
+</body>
+</html>
